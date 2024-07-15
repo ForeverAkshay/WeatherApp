@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 555px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    color: #fff;
+}
+
+.search-box{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.search-box input {
+    position: absolute;
+    width: 77%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0 48px 0 42px;
+    color: #fff;
+}
+
+.search-box input::placeholder{
+    color: #fff;
+}
+
+.search-box button {
+    font-size: 27px;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box i {
+    padding: 6px;
+    font-size: 26px;
+}
+
+.weather-box{
+    text-align: center;
+    margin: 40px 0;
+
+}
+
+.weather-box img{
+    width: 60%;
+ 
+}
+
+.weather-box .temperature{
+    position: relative;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 20px 0 6px -30px ;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+    
+}
+
+.weather-box .description{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+.weather-detail{
+    padding:0 20px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+
+
+}
+.weather-detail .humidity,
+.weather-detail .wind
+
+{   
+    width: 50%;
+    align-items: center;
+    display: flex;
+
+}
+
+.weather-detail .humidity{
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+.weather-detail .wind{
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+
+.weather-detail i{
+    font-size: 56px;
+    margin-right: 10px;
+}
+.weather-detail .wind i {
+    font-size: 56px; /* Set a fixed size for the humidity icon */
+}
+
+.weather-detail span{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-detail p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
